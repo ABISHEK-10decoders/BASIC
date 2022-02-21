@@ -1,0 +1,79 @@
+$PRIMARY-COLOUR : #f9f1f1;
+$SECONDARY-COLUR : #fffff4;
+$TEXT-COLUR : #505050;
+$FONT-20 : 20px;
+$PADDING-20 : 20PX;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.HEADER{
+    display: flex;
+    background-color: $PRIMARY-COLOUR;
+    padding: $PADDING-20;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px rgb(175, 175, 175);
+    &__LOGO{
+        font-size: $FONT-20;
+    }
+    &__LIST{
+        display: flex;
+        
+    }
+    &__RIGHT{
+        margin-right: 20px;
+
+    }
+}
+.content{
+    text-align: center;
+    background-color: rgb(207, 204, 204);
+    padding:  20px;
+    max-width: 720px;
+    margin: 40px auto;
+    
+    box-shadow: 5px 5px 5px rgba(184, 184, 184, 0.74);
+    &__header{
+        background-color: tomato;
+        padding: $PADDING-20;
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        padding:60px;
+       
+        text-align: start;
+    }
+    &__body--input{
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 2px;
+    }
+    &__submit{
+        padding: 10px 20px;
+        font-size: $FONT-20;
+        cursor: pointer;
+        border: none;
+        50PX   display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    background-color:$SECONDARY-COLUR;
+    padding: 60px;;
+    &__header{
+        color: $TEXT-COLUR;
+    }
+    &__footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+    &__footer--a{
+        margin: 4px;
+    }
+}
